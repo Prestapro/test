@@ -28,10 +28,10 @@ jobs:
       run: |
         python -m engine.active_inference_agent
     
-    - name: Run Cross-Space Alignment Tests
+    - name: Run Original Cross-Space Alignment Tests
       run: |
         python -m engine.cross_space_alignment
     
-    - name: Run Alignment Budget Analysis
+    - name: Run HONEST Tests (Different Views, Not Identity Case)
       run: |
-        python -m engine.alignment_budget_analysis
+        python -m engine.honest_tests
